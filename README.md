@@ -323,7 +323,7 @@ records for each type.
 <img width="944" height="625" alt="image" src="https://github.com/user-attachments/assets/e02c990b-6fd8-4f1e-a6a3-4119eca93924" />
 
 
-## 2. Distribution of Average Pollutant Values
+## 2. Histogram: Distribution of Average Pollutant Values
 
 **Library**: Matplotlib | **Analysis**: Univariate
 
