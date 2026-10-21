@@ -549,8 +549,7 @@ associated with higher pollutant readings in different locations.
 
 # 16. REFERENCES  
 
-**Dataset Source**: https://www.data.gov.in/resource/real-time-air-quality-indexvarious
-locations  
+**Dataset Source**: https://www.data.gov.in/resource/real-time-air-quality-index-various-locations
 
 **Google Colab**: Used for Python-based data cleaning, analysis, and visualization.  
 
