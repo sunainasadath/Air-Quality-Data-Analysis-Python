@@ -137,7 +137,6 @@ pollutant measurements and prepare the data for further analysis.
 1. Bar Chart: Number of Records by Pollutant
 Library: Matplotlib | Analysis: Univariate (frequency of one categorical variable)
 This bar chart shows the number of records for each pollutant type, including NH3, CO, PM10, PM2.5, NO2, OZONE, and SO2. The record counts are similar across pollutant categories, indicating that the dataset contains a comparable number records for each type.
-![Number of Records by Pollutant](images/01_records_by_pollutant.png)
 
 3. Distribution of Average Pollutant Values
 Library: Matplotlib | Analysis: Univariate
