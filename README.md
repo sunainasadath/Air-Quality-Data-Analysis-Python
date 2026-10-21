@@ -138,34 +138,36 @@ pollutant measurements and prepare the data for further analysis.
 Library: Matplotlib | Analysis: Univariate (frequency of one categorical variable)
 This bar chart shows the number of records for each pollutant type, including NH3, CO, PM10, PM2.5, NO2, OZONE, and SO2. The record counts are similar across pollutant categories, indicating that the dataset contains a comparable number records for each type.
 
-2. Distribution of Average Pollutant Values
+![Number of Records by Pollutant](images/01_records_by_pollutant.png)
+
+3. Distribution of Average Pollutant Values
 Library: Matplotlib | Analysis: Univariate
 This histogram shows the distribution of average pollutant readings. Most readings
 are concentrated at lower values, while fewer observations occur at higher value.
 The distribution is right-skewed, indicating the presence of some high pollutant 
 Readings.
 
-3. Box Plot: Distribution of Average Pollutant Values
+4. Box Plot: Distribution of Average Pollutant Values
 Library: Matplotlib | Analysis: Univariate
 The box plot displays the median, spread, and potential outliers in average pollutant 
 readings. Several observations lie above the upper whisker, indicating unusually high 
 readings compared with the majority of the data. These observations may require 
 further investigation.
  
-4. Scatter Plot: Minimum vs. Average Pollutant Values
+5. Scatter Plot: Minimum vs. Average Pollutant Values
 Library: Matplotlib | Analysis: Bivariate
 This scatter plot examines the relationship between minimum and average pollutant 
 readings. The points show a positive relationship, meaning that higher minimum 
 readings generally occur alongside higher average readings.
 
-5. Bar Chart: Average Pollutant Values by Pollutant
+6. Bar Chart: Average Pollutant Values by Pollutant
 Library: Matplotlib | Analysis: Bivariate
 This bar chart compares the mean recorded value for each pollutant type. PM10 has 
 the highest average value, followed by PM2.5, while NH3 has the lowest. These 
 comparisons should be interpreted carefully because different pollutants may have 
 different measurement scales.
   
-6. Scatter Plot: Geographical Distribution of Monitoring Stations by  
+7. Scatter Plot: Geographical Distribution of Monitoring Stations by  
 Pollutant
 Library: Seaborn | Analysis: Multivariate
 This scatter plot displays monitoring station locations using longitude and latitude, 
@@ -173,7 +175,7 @@ with colours representing pollutant types. The points are distributed across dif
 parts of India, showing the geographical coverage of the monitoring stations and the 
 pollutant categories recorded at those locations.
  
-7. Heatmap: Correlation Between Numerical Variables
+8. Heatmap: Correlation Between Numerical Variables
 Library: Seaborn | Analysis: Multivariate
 The correlation heatmap shows relationships between numerical variables. Average 
 pollutant values have strong positive correlations with minimum values (0.86) and 
@@ -181,7 +183,7 @@ maximum values (0.90). Latitude has a weak positive correlation with average
 pollutant values (0.20), while longitude has a weak negative correlation (-0.17). 
 Correlation indicates association, not causation.
 
- 8. Interactive Bar Chart: Average PM2.5 Values by State
+ 9. Interactive Bar Chart: Average PM2.5 Values by State
 Library: Plotly | Analysis: Bivariate
 This interactive bar chart compares the average PM2.5 readings across states. 
 Delhi has the highest average among the ten displayed states, followed by Haryana 
