@@ -5,16 +5,19 @@ A Python-based data analysis project that transforms air quality monitoring data
 
 This project, titled Air Quality Data Analysis focuses on analysing air quality monitoring data collected from different locations. The dataset is cleaned by handling missing values, duplicates, inconsistent values, and data type issues. Invalid geographical coordinates and potential outliers in pollutant measurements are also examined. Exploratory Data Analysis (EDA) is performed using summary statistics and pollutant-wise and location-wise analysis. Data visualization techniques are used to compare pollutant measurements, identify patterns, and explore the geographical distribution of monitoring stations. The main purpose of this project is to transform raw air quality data into meaningful information through data cleaning, statistical analysis, and visualization. The analysis helps identify patterns and variations in the available pollutant readings across different locations. 
 
-3. INTRODUCTION 
+2. INTRODUCTION
+   
 The Air Quality Data Analysis project focuses on exploring and analysing air quality monitoring data using data analytics techniques. The dataset contains information about countries, states, cities, monitoring stations, geographical coordinates, pollutant types, and minimum, maximum, and average pollutant measurements. 
 The project begins with data loading and cleaning, including handling missing values, removing duplicate records where necessary, correcting inconsistent values, and converting columns to appropriate data types. Potential outliers in pollutant measurements are examined using the Interquartile Range (IQR) method. Additional time-based columns are created to support further analysis. 
 Exploratory Data Analysis (EDA) is then performed using summary statistics and pollutant-wise and location-wise comparisons. Charts and graphs created with Matplotlib, Seaborn, and Plotly help present the results and explore patterns in pollutant measurements and the geographical distribution of monitoring stations. 
 The main purpose of this project is to apply data analytics techniques to clean, analyse, and visualize air quality data. It aims to identify useful patterns and variations in pollutant measurements across different locations and present the findings through charts, graphs, and statistical summaries. 
 
-4. Problem Statement
+3. Problem Statement
+   
 Air pollution is a major environmental concern that affects human health and the environment. The dataset contains air quality readings collected from monitoring stations across different locations in India. Analysing this data helps identify pollutant patterns, compare air quality readings across states, and understand relationships between numerical variables. Therefore, this project aims to analyse the dataset using Python and visualisation techniques to obtain meaningful insights.
 
-5. PROJECT OBJECTIVES
+4. PROJECT OBJECTIVES
+   
 The main objectives of this project are:
 •	To clean the air quality dataset by handling missing values, duplicate records, and inconsistent data.
 •	To convert data columns into appropriate data types for analysis.
@@ -26,7 +29,8 @@ The main objectives of this project are:
 •	To create charts and graphs to visualise the results.
 •	To identify meaningful patterns and variations in the available air quality data.
 
- 6. DATASET DESCRIPTION
+5. DATASET DESCRIPTION
+     
 The dataset used in this project was obtained from Data.gov.in. It contains air quality 
 monitoring information collected from different locations in India. The dataset
  includes geographical details of monitoring stations, pollutant types, and pollutant 
@@ -49,7 +53,8 @@ Important Columns:
 These columns were used for data cleaning, exploratory data analysis, statistical 
 analysis, and visualisation of air quality patterns across different locations.
 
-7. TOOLS AND TECHNOLOGIES USED 
+6. TOOLS AND TECHNOLOGIES USED
+   
 The following tools and libraries are used in this project: 
 6.1 Google Colab 
 Google Colab is used to write and execute Python code for data cleaning, analysis, and visualizations. 
@@ -66,7 +71,8 @@ Seaborn is used to create statistical visualizations, such as distribution plots
 6.7 Plotly 
 Plotly is used to create interactive visualizations, including geographical scatter plots that display monitoring stations using latitude and longitude. 
  
-8. DATA LOADING AND INITIAL INSPECTION
+7. DATA LOADING AND INITIAL INSPECTION
+
 The air quality dataset was loaded into Python using the Pandas library. Initial inspection was performed to understand the dataset structure, identify the columns, check data types, and examine summary statistics before cleaning.
 The following Pandas methods were used:
 •	Head () – Displays the first five rows of the dataset.
@@ -79,7 +85,8 @@ The following Pandas methods were used:
 •	Describe () – Provides summary statistics for numerical columns, including the mean, minimum, maximum, and standard deviation.
 Before cleaning, the dataset contained 3,563 records. These inspection steps helped understand the dataset and identify areas requiring further checking and preprocessing.
 
-9. DATA CLEANING AND PREPROCESSING
+8. DATA CLEANING AND PREPROCESSING
+
 Data cleaning was performed to improve the accuracy and consistency of the 
 dataset before analysis.
 8.1 Handling Missing Values
@@ -102,7 +109,8 @@ The state column was checked for unnecessary leading and trailing spaces. Seven 
 Incorrect coordinate values were reviewed and corrected where the appropriate station coordinates could be verified. The dataset was then prepared for further analysis and visualisation.
 After cleaning and preprocessing, the dataset contained 3,556 records.
 
-10. EXPLORATORY DATA ANALYSIS (EDA) 
+9. EXPLORATORY DATA ANALYSIS (EDA)
+   
 Exploratory Data Analysis (EDA) is performed to understand the structure, 
 characteristics, and patterns in the air quality dataset. It helps identify variations in 
 pollutant measurements and prepare the data for further analysis. 
@@ -124,7 +132,8 @@ pollutant measurements and prepare the data for further analysis.
  9.8 Correlation Analysis 
 • 	Examined relationships between numerical variables using a correlation matrix. Strong positive correlations were observed between minimum and average pollutant values and between maximum and average pollutant values.
 
-11. DATA VISUALIZATION AND INTERPRETATION 
+10. DATA VISUALIZATION AND INTERPRETATION
+   
 1. Bar Chart: Number of Records by Pollutant
 Library: Matplotlib | Analysis: Univariate (frequency of one categorical variable)
 This bar chart shows the number of records for each pollutant type, including NH3, CO, PM10, PM2.5, NO2, OZONE, and SO2. The record counts are similar across pollutant categories, indicating that the dataset contains a comparable number records for each type.
@@ -186,7 +195,8 @@ latitude. Colour represents the average pollutant reading, while hover details p
 the station, city, and state. It helps users explore the geographical distribution of 
 monitoring stations and differences in recorded pollutant values.
 
-11. KEY FINDINGS AND INSIGHTS 
+11. KEY FINDINGS AND INSIGHTS
+
 The analysis of the air quality dataset produced the following findings: 
 •	Dataset Overview: The original dataset contained 3,563 records. After data cleaning, 3,556 records remained for analysis, as seven records were removed during the cleaning process. 
 •	State-Wise Records: Maharashtra had the highest number of records (602), followed by Uttar Pradesh (468) and Rajasthan (336). 
@@ -198,6 +208,7 @@ The analysis of the air quality dataset produced the following findings:
 •	Geographical Analysis: The interactive geographical plots helped explore the distribution of monitoring stations and variations in recorded pollutant values across locations. Overall, the findings show variations in pollutant readings and monitoring coverage across locations. 
 
 12. RECOMMENDATIONS
+
 Based on the findings of the air quality analysis, the following recommendations are suggested:
 •	Focus on PM10 and PM2.5: Give special attention to monitoring these pollutants because they showed higher average values in the analysis.
 •	Monitor High-Pollution Locations: Locations showing higher pollutant values, including Delhi in the state-wise PM2.5 comparison, should be monitored regularly.
@@ -206,13 +217,15 @@ Based on the findings of the air quality analysis, the following recommendations
 •	Use Geographical Visualisation: Use latitude and longitude to identify monitoring station locations and explore geographical patterns in pollutant values.
 •	Support Further Investigation: Use the findings to identify areas that may need closer monitoring and further investigation into possible pollution sources.
 
-13. CONCLUSION 
+13. CONCLUSION
+ 
 The Air Quality Data Analysis project was carried out to understand pollutant measurements and their variations across different locations using Python. The dataset was cleaned and analysed using Pandas and NumPy, while Matplotlib, Seaborn, and Plotly were used for data visualization. 
 The analysis showed that Maharashtra had the highest number of records, followed by Uttar Pradesh and Rajasthan. PM10 had the highest average recorded value of 68.35, followed by PM2.5 at 58.05. The state-wise analysis also showed that Delhi had the highest average PM2.5 reading among the states included in the analysis. 
 Strong positive correlations were observed between minimum and average pollutant readings and between maximum and average pollutant readings. 
 These findings show that pollutant measurements and monitoring coverage vary across locations. However, the results describe only the available dataset and do not necessarily represent current air quality conditions. Overall, the project provided practical experience in data cleaning, exploratory data analysis, statistical analysis, and data visualization. It also identified areas where additional data and further analysis could improve the understanding of air pollution patterns. 
  
-14. LIMITATIONS 
+14. LIMITATIONS
+
 •	Data Availability: The analysis was limited to the records available in the dataset. 
 •	Missing and Inconsistent Data: Missing values and inconsistencies may affect the accuracy of some results. 
 •	Limited Time Coverage: The analysis may not represent current air quality conditions because continuous live data updates were not verified. 
@@ -220,7 +233,8 @@ These findings show that pollutant measurements and monitoring coverage vary acr
 •	Correlation Limitations: Correlation analysis identifies relationships between variables but does not establish causation. 
 •	Limited Information on Pollution Causes: The dataset mainly contains pollutant measurements and location details. It does not provide sufficient information to confirm whether traffic, industrial activities, weather conditions, or other factors caused higher pollutant readings. 
  
-15. FUTURE SCOPE 
+15. FUTURE SCOPE
+
 •	Live Data Integration: Connect the project to regularly updated air quality data sources to analyse more recent pollutant readings. 
 •	Predictive Analysis: Apply machine learning techniques to predict future pollutant levels using suitable historical data. 
 •	Advanced Visualization: Develop interactive dashboards with additional filters and geographical views to make the analysis easier to understand. 
